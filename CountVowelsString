@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    
+    string str = "Interview";
+    
+    int len = str.length();
+    
+    int count = 0;
+    
+    for(int i=0; i<len; i++){
+        
+        if(str[i] == 'a'|| str[i] == 'e'|| str[i] == 'i'||str[i] == 'o'|| str[i] == 'u' || 
+                                     str[i] == 'A'|| str[i] == 'E'|| str[i] == 'I'||str[i] == 'O'|| str[i] == 'U' ){
+            
+            count++;
+        }
+    }
+    
+    cout<<"No. of vowels would be "<<count;
+
+    return 0;
+}
