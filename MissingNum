@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  int arr[] = {1,2,3,4,5,6,7,9};
+  int size = sizeof(arr)/sizeof(arr[0]);
+  
+  int sum = 0;
+  
+  for(int i=0; i<size;i++){
+      
+      sum = sum + arr[i];
+  }
+  
+  //for sum of n numbers we have formula -> size(size+1)/2
+  int n = size + 1;
+  int sumofn = (n*(n+1))/2;
+  
+  int missingnum = sumofn - sum;
+  
+  cout<<missingnum<<endl;
+
+    return 0;
+}
